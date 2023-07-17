@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'typography';
+@import 'buttons';
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  padding: 1rem;
+  margin: 0 auto;
+}
