@@ -13,4 +13,15 @@ $danger: #cf1900;
 $dark: #2f343a;
 $light: #f7f8f9;
 $white: #fff;
-$light-blue: #3d8bfd;
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$custom-theme-colors: (
+'lightblue': #3d8bfd,
+'light-secondary': #ffd083,
+'active-secondary': #eb5901
+);
+
+$theme-colors: map-merge($map1: $custom-theme-colors, $map2: $theme-colors );
+
