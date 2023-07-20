@@ -13163,13 +13163,9 @@ textarea.form-control-lg {
 .btn-md .icon-left,
 .btn-md .icon-right,
 .btn-md .icon-only {
+  display: inline-block;
   width: 38px;
   height: 38px;
-}
-.btn-md .icon-left i,
-.btn-md .icon-right i,
-.btn-md .icon-only i {
-  display: inline-block;
   font-size: 20px;
   line-height: 38px;
 }
@@ -13183,15 +13179,9 @@ textarea.form-control-lg {
 .btn-group-lg > .btn .icon-right,
 .btn-lg .icon-only,
 .btn-group-lg > .btn .icon-only {
+  display: inline-block;
   width: 42px;
   height: 42px;
-}
-.btn-lg .icon-left i, .btn-group-lg > .btn .icon-left i,
-.btn-lg .icon-right i,
-.btn-group-lg > .btn .icon-right i,
-.btn-lg .icon-only i,
-.btn-group-lg > .btn .icon-only i {
-  display: inline-block;
   font-size: 24px;
   line-height: 42px;
 }
@@ -13203,13 +13193,9 @@ textarea.form-control-lg {
 .btn-xl .icon-left,
 .btn-xl .icon-right,
 .btn-xl .icon-only {
+  display: inline-block;
   width: 48px;
   height: 48px;
-}
-.btn-xl .icon-left i,
-.btn-xl .icon-right i,
-.btn-xl .icon-only i {
-  display: inline-block;
   font-size: 28px;
   line-height: 48px;
 }
@@ -13242,9 +13228,17 @@ textarea.form-control-lg {
 .btn-secondary .bi:disabled, .btn-secondary.only-text:disabled {
   color: #ffe2b4;
 }
-.btn-secondary:disabled .icon-left i,
-.btn-secondary:disabled .icon-right i {
+.btn-secondary:disabled .bi {
   color: #ffe2b4;
+}
+.btn-secondary:disabled .icon-only {
+  color: #f7f8f9;
+}
+.btn-secondary .icon-only {
+  color: #f7f8f9;
+}
+.btn-secondary .icon-only:hover, .btn-secondary .icon-only:active {
+  color: #f7f8f9;
 }
 
 .btn-primary {

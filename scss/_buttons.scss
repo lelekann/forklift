@@ -64,12 +64,6 @@
     height: 36px;
     font-size: 16px;
     line-height: 36px;
-
-    // i {
-    //   display: inline-block;
-    //   font-size: 16px;
-    //   line-height: 36px;
-    // }
   }
 }
 
@@ -80,14 +74,11 @@
   .icon-left,
   .icon-right,
   .icon-only {
+    display: inline-block;
     width: 38px;
     height: 38px;
-
-    i {
-      display: inline-block;
-      font-size: 20px;
-      line-height: 38px;
-    }
+    font-size: 20px;
+    line-height: 38px;
   }
 }
 
@@ -98,14 +89,11 @@
   .icon-left,
   .icon-right,
   .icon-only {
+    display: inline-block;
     width: 42px;
     height: 42px;
-
-    i {
-      display: inline-block;
-      font-size: 24px;
-      line-height: 42px;
-    }
+    font-size: 24px;
+    line-height: 42px;
   }
 }
 
@@ -116,14 +104,11 @@
   .icon-left,
   .icon-right,
   .icon-only {
+    display: inline-block;
     width: 48px;
     height: 48px;
-
-    i {
-      display: inline-block;
-      font-size: 28px;
-      line-height: 48px;
-    }
+    font-size: 28px;
+    line-height: 48px;
   }
 }
 
@@ -161,11 +146,21 @@
   }
 
   &:disabled {
-    .icon-left,
-    .icon-right {
-      i {
-        color: #ffe2b4;
-      }
+    .bi {
+      color: #ffe2b4;
+    }
+
+    .icon-only {
+      color: #f7f8f9;
+    }
+  }
+
+  .icon-only {
+    color: #f7f8f9;
+
+    &:hover,
+    &:active {
+      color: #f7f8f9;
     }
   }
 }
