@@ -13420,6 +13420,49 @@ textarea.form-control-lg {
   background-color: transparent;
 }
 
+.btn-success {
+  --bs-btn-color: #f7f8f9;
+  --bs-btn-hover-color: #f7f8f9;
+  --bs-btn-hover-bg: #49cb4d;
+  --bs-btn-hover-border-color: #49cb4d;
+  --bs-btn-active-color: #f7f8f9;
+  --bs-btn-active-bg: #00b118;
+  --bs-btn-active-border-color: #00b118;
+  --bs-btn-disabled-color: #c5ecc2;
+  --bs-btn-disabled-bg: #e7f8e6;
+  --bs-btn-disabled-border-color: #e7f8e6;
+}
+.btn-success .bi {
+  background-color: #f7f8f9;
+}
+.btn-success .bi.icon-only {
+  color: #f7f8f9;
+  background-color: transparent;
+}
+.btn-success .bi.icon-only:hover, .btn-success .bi.icon-only:active {
+  color: #f7f8f9;
+}
+.btn-success .bi, .btn-success.only-text {
+  color: #04c122;
+}
+.btn-success .bi:hover, .btn-success.only-text:hover {
+  color: #49cb4d;
+}
+.btn-success .bi:active, .btn-success.only-text:active {
+  color: #00b118;
+}
+.btn-success .bi:disabled, .btn-success.only-text:disabled {
+  color: #e7f8e6;
+}
+.btn-success:disabled .bi {
+  color: #e7f8e6;
+  background-color: #c5ecc2;
+}
+.btn-success:disabled .icon-only {
+  color: #c5ecc2;
+  background-color: transparent;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
