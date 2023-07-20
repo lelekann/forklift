@@ -181,6 +181,7 @@
   --bs-btn-disabled-bg: #e4f1fb;
   --bs-btn-disabled-border-color: #e4f1fb;
 
+  .bi,
   &.only-text {
     color: #305dab;
 
@@ -198,12 +199,24 @@
   }
 
   &:disabled {
-    .icon-left,
-    .icon-right {
+    .bi {
       background-color: #bddbf5;
-      i {
-        color: #e4f1fb;
-      }
+      color: #e4f1fb;
+    }
+
+    .icon-only {
+      color: #bddbf5;
+      background-color: #e4f1fb;
     }
   }
+
+  .icon-only {
+    color: #f7f8f9;
+
+    &:hover,
+    &:active {
+      color: #f7f8f9;
+    }
+  }
+
 }

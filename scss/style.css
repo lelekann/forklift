@@ -13257,25 +13257,31 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #e4f1fb;
   --bs-btn-disabled-border-color: #e4f1fb;
 }
-.btn-primary.only-text {
+.btn-primary .bi, .btn-primary.only-text {
   color: #305dab;
 }
-.btn-primary.only-text:hover {
+.btn-primary .bi:hover, .btn-primary.only-text:hover {
   color: #386fbc;
 }
-.btn-primary.only-text:active {
+.btn-primary .bi:active, .btn-primary.only-text:active {
   color: #27418a;
 }
-.btn-primary.only-text:disabled {
+.btn-primary .bi:disabled, .btn-primary.only-text:disabled {
   color: #e4f1fb;
 }
-.btn-primary:disabled .icon-left,
-.btn-primary:disabled .icon-right {
+.btn-primary:disabled .bi {
   background-color: #bddbf5;
-}
-.btn-primary:disabled .icon-left i,
-.btn-primary:disabled .icon-right i {
   color: #e4f1fb;
+}
+.btn-primary:disabled .icon-only {
+  color: #bddbf5;
+  background-color: #e4f1fb;
+}
+.btn-primary .icon-only {
+  color: #f7f8f9;
+}
+.btn-primary .icon-only:hover, .btn-primary .icon-only:active {
+  color: #f7f8f9;
 }
 
 body {
