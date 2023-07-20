@@ -9,7 +9,7 @@ $secondary: #fa8204;
 $success: #04c122;
 $info: #0091cf;
 $warning: #f0e81a;
-$danger: #cf1900;
+$danger: #e72d0d;
 $dark: #2f343a;
 $light: #f7f8f9;
 $white: #fff;
@@ -28,8 +28,8 @@ $custom-theme-colors: (
   "secondary-600": #ff9306,
   "secondary-800": #f47303,
   "secondary-900": #eb5901,
-  "primary-50":#E4F1FB,
-  "primary-100":#BDDBF5,
+  "primary-50": #e4f1fb,
+  "primary-100": #bddbf5,
 );
 
 $theme-colors: map-merge(

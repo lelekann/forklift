@@ -333,3 +333,63 @@
     }
   }
 }
+
+.btn-danger {
+  --bs-btn-color: #f7f8f9;
+  --bs-btn-bg: #e72d0d;
+  --bs-btn-border-color: #e72d0d;
+  --bs-btn-hover-color: #f7f8f9;
+  --bs-btn-hover-bg: #f53512;
+  --bs-btn-hover-border-color: #f53512;
+  --bs-btn-focus-shadow-rgb: 196, 38, 11;
+  --bs-btn-active-color: #f7f8f9;
+  --bs-btn-active-bg: #cf1900;
+  --bs-btn-active-border-color: #cf1900;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #ffcabb;
+  --bs-btn-disabled-bg: #fee8e7;
+  --bs-btn-disabled-border-color: #fee8e7;
+
+  .bi {
+    background-color: #f7f8f9;
+
+    &.icon-only {
+      color: #ffcabb;
+      background-color: transparent;
+
+      &:hover,
+      &:active {
+        color: #f7f8f9;
+      }
+    }
+  }
+
+  .bi,
+  &.only-text {
+    color: #e72d0d;
+
+    &:hover {
+      color: #f53512;
+    }
+
+    &:active {
+      color: #cf1900;
+    }
+
+    &:disabled {
+      color: #fee8e7;
+    }
+  }
+
+  &:disabled {
+    .bi {
+      color: #fee8e7;
+      background-color: #ffcabb;
+    }
+
+    .icon-only {
+      color: #ffcabb;
+      background-color: transparent;
+    }
+  }
+}
