@@ -13284,6 +13284,49 @@ textarea.form-control-lg {
   color: #f7f8f9;
 }
 
+.btn-info {
+  --bs-btn-color: #f7f8f9;
+  --bs-btn-bg: #3c77e9;
+  --bs-btn-border-color: #3c77e9;
+  --bs-btn-hover-color: #f7f8f9;
+  --bs-btn-hover-bg: #3d8bfd;
+  --bs-btn-hover-border-color: #3d8bfd;
+  --bs-btn-focus-shadow-rgb: 0, 123, 176;
+  --bs-btn-active-color: #f7f8f9;
+  --bs-btn-active-bg: #3a65d6;
+  --bs-btn-active-border-color: #3a65d6;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #bfdfff;
+  --bs-btn-disabled-bg: #e4f3ff;
+  --bs-btn-disabled-border-color: #e4f3ff;
+}
+.btn-info .bi, .btn-info.only-text {
+  color: #3c77e9;
+}
+.btn-info .bi:hover, .btn-info.only-text:hover {
+  color: #3d8bfd;
+}
+.btn-info .bi:active, .btn-info.only-text:active {
+  color: #3a65d6;
+}
+.btn-info .bi:disabled, .btn-info.only-text:disabled {
+  color: #e4f3ff;
+}
+.btn-info:disabled .bi {
+  background-color: #bfdfff;
+  color: #e4f3ff;
+}
+.btn-info:disabled .icon-only {
+  color: #e4f3ff;
+  background-color: #bfdfff;
+}
+.btn-info .icon-only {
+  color: #f7f8f9;
+}
+.btn-info .icon-only:hover, .btn-info .icon-only:active {
+  color: #f7f8f9;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
