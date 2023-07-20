@@ -520,3 +520,74 @@
     }
   }
 }
+
+.btn-dark {
+  --bs-btn-color: #f7f8f9;
+  --bs-btn-hover-color: #f7f8f9;
+  --bs-btn-hover-bg: #515c67;
+  --bs-btn-hover-border-color: #515c67;
+  --bs-btn-active-color: #f7f8f9;
+  --bs-btn-active-bg: #2f343a;
+  --bs-btn-active-border-color: #2f343a;
+  --bs-btn-disabled-color: #f7f8f9;
+  --bs-btn-disabled-bg: #d5d8db;
+  --bs-btn-disabled-border-color: #d5d8db;
+
+  .bi {
+    color: #424951;
+    background-color: #f7f8f9;
+  }
+
+  &:hover {
+    .bi {
+      color: #515c67;
+    }
+  }
+
+  &:active {
+    .bi {
+      color: #2f343a;
+    }
+  }
+
+  .icon-only {
+    color: #f7f8f9;
+    background-color: transparent;
+
+    &:hover {
+      color: #f7f8f9;
+    }
+
+    &:active {
+      color: #f7f8f9;
+    }
+  }
+
+  &.only-text {
+    color: #424951;
+
+    &:hover {
+      color: #515c67;
+    }
+
+    &:active {
+      color: #2f343a;
+    }
+
+    &:disabled {
+      color: #d5d8db;
+    }
+  }
+
+  &:disabled {
+    .bi {
+      color: #d5d8db;
+      background-color: #f7f8f9;
+    }
+
+    .icon-only {
+      color: #f7f8f9;
+      background-color: transparent;
+    }
+  }
+}
