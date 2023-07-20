@@ -13317,8 +13317,8 @@ textarea.form-control-lg {
   color: #e4f3ff;
 }
 .btn-info:disabled .icon-only {
-  color: #e4f3ff;
-  background-color: #bfdfff;
+  color: #bfdfff;
+  background-color: #e4f3ff;
 }
 .btn-info .icon-only {
   color: #f7f8f9;
@@ -13327,11 +13327,60 @@ textarea.form-control-lg {
   color: #f7f8f9;
 }
 
+.btn-warning {
+  --bs-btn-color: #515c67;
+  --bs-btn-bg: #f0e81a;
+  --bs-btn-border-color: #f0e81a;
+  --bs-btn-hover-color: #515c67;
+  --bs-btn-hover-bg: #f0e81a;
+  --bs-btn-hover-border-color: #f0e81a;
+  --bs-btn-focus-shadow-rgb: 204, 197, 22;
+  --bs-btn-active-color: #515c67;
+  --bs-btn-active-bg: #f0be00;
+  --bs-btn-active-border-color: #f0be00;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #d5d8db;
+  --bs-btn-disabled-bg: #fdfde5;
+  --bs-btn-disabled-border-color: #fdfde5;
+}
+.btn-warning .bi {
+  background-color: #515c67;
+}
+.btn-warning .bi.icon-only {
+  color: #515c67;
+  background-color: transparent;
+}
+.btn-warning .bi.icon-only:hover, .btn-warning .bi.icon-only:active {
+  color: #515c67;
+}
+.btn-warning .bi, .btn-warning.only-text {
+  color: #f0e81a;
+}
+.btn-warning .bi:hover, .btn-warning.only-text:hover {
+  color: #f0e81a;
+}
+.btn-warning .bi:active, .btn-warning.only-text:active {
+  color: #f0be00;
+}
+.btn-warning .bi:disabled, .btn-warning.only-text:disabled {
+  color: #fdfde5;
+}
+.btn-warning:disabled .bi {
+  color: #d5d8db;
+}
+.btn-warning:disabled .icon-only {
+  color: #d5d8db;
+  background-color: #fdfde5;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   padding: 16px;
   margin: 0 auto;
+}
+body section {
+  background-color: #cdcdcd;
 }
 body button {
   padding: 0;
