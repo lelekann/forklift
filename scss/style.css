@@ -13463,6 +13463,59 @@ textarea.form-control-lg {
   background-color: transparent;
 }
 
+.btn-light {
+  --bs-btn-color: #fa8204;
+  --bs-btn-hover-color: #ff9306;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-active-color: #f47303;
+  --bs-btn-active-bg: #f7f8f9;
+  --bs-btn-active-border-color: #f7f8f9;
+  --bs-btn-disabled-color: #ffe2b4;
+  --bs-btn-disabled-bg: #f7f8f9;
+  --bs-btn-disabled-border-color: #f7f8f9;
+}
+.btn-light .bi {
+  color: #f7f8f9;
+  background-color: #fa8204;
+}
+.btn-light:hover .bi {
+  background-color: #ff9306;
+}
+.btn-light:active .bi {
+  background-color: #f47303;
+}
+.btn-light .bi.icon-only {
+  color: #fa8204;
+  background-color: transparent;
+}
+.btn-light .bi.icon-only:hover {
+  color: #ff9306;
+}
+.btn-light .bi.icon-only:active {
+  color: #f47303;
+}
+.btn-light.only-text {
+  color: #f7f8f9;
+}
+.btn-light.only-text:hover {
+  color: #fff;
+}
+.btn-light.only-text:active {
+  color: #efefef;
+}
+.btn-light.only-text:disabled {
+  color: #d5d8db;
+}
+.btn-light:disabled .bi {
+  color: #f7f8f9;
+  background-color: #ffe2b4;
+}
+.btn-light:disabled .icon-only {
+  color: #ffe2b4;
+  background-color: transparent;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
