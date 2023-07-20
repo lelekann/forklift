@@ -14,14 +14,25 @@ $dark: #2f343a;
 $light: #f7f8f9;
 $white: #fff;
 
-@import '../node_modules/bootstrap/scss/functions';
-@import '../node_modules/bootstrap/scss/variables';
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
 
 $custom-theme-colors: (
-'lightblue': #3d8bfd,
-'light-secondary': #ffd083,
-'active-secondary': #eb5901
+  "lightblue": #3d8bfd,
+  "secondary-50": #fff4e1,
+  "secondary-100": #ffe2b4,
+  "secondary-200": #ffd083,
+  "secondary-300": #ffbd50,
+  "secondary-400": #ffae2a,
+  "secondary-500": #ff9f08,
+  "secondary-600": #ff9306,
+  "secondary-800": #f47303,
+  "secondary-900": #eb5901,
+  "primary-50":#E4F1FB,
+  "primary-100":#BDDBF5,
 );
 
-$theme-colors: map-merge($map1: $custom-theme-colors, $map2: $theme-colors );
-
+$theme-colors: map-merge(
+  $map1: $custom-theme-colors,
+  $map2: $theme-colors,
+);

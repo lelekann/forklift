@@ -1,40 +1,54 @@
 @import "variables";
 
 .btn {
-  border-radius: 100px;
   display: flex;
-  padding: 3px;
   align-items: center;
+  border-radius: 100px;
+  font-weight: 500;
+  letter-spacing: 0.46px;
+  text-transform: lowercase;
+  padding: 0;
   margin-bottom: 5px;
 
-  .btn-icon {
-    background-color: $white;
-    border-radius: 50%;
-    padding: 10px;
+  &.btn-xl {
+    border-radius: 5px;
   }
 
-  .btn-icon-only {
-    background-color: inherit;
+  .icon-left,
+  .icon-right,
+  .icon-only {
+    display: inline-block;
+    background-color: $light;
+    border-radius: 50%;
+  }
+
+  .icon-left {
+    margin: 6px -7px 6px 6px;
+  }
+
+  .icon-right {
+    margin: 6px 6px 6px -7px;
   }
 
   .btn-text {
-    padding: 10px;
-    font-weight: 500;
-    letter-spacing: 0.46px;
+    padding: 0 20px;
   }
 
-  .text-secondary {
-    &:hover {
-    opacity: 0.5;
-    }
-    &.disabled {
-    opacity: 0.5
-    }
+  .icon-only {
+    background-color: inherit;
+    margin: 6px;
   }
 
-  &:disabled {
-    background-color: #ffd083;
-    border-color: #ffd083;
+  &.only-text {
+    background-color: transparent;
+    border: none;
+
+    &:hover,
+    &:active,
+    &:disabled {
+      background-color: transparent;
+      border: none;
+    }
   }
 }
 
@@ -42,9 +56,20 @@
   font-size: 0.875rem;
   line-height: 21px;
 
-  i {
-    display: block;
-    font-size: 21px;
+  .icon-left,
+  .icon-right,
+  .icon-only {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 36px;
+
+    // i {
+    //   display: inline-block;
+    //   font-size: 16px;
+    //   line-height: 36px;
+    // }
   }
 }
 
@@ -52,9 +77,17 @@
   font-size: 1rem;
   line-height: 24px;
 
-  i {
-    display: block;
-    font-size: 24px;
+  .icon-left,
+  .icon-right,
+  .icon-only {
+    width: 38px;
+    height: 38px;
+
+    i {
+      display: inline-block;
+      font-size: 20px;
+      line-height: 38px;
+    }
   }
 }
 
@@ -62,9 +95,17 @@
   font-size: 1.25rem;
   line-height: 30px;
 
-  i {
-    display: block;
-    font-size: 30px;
+  .icon-left,
+  .icon-right,
+  .icon-only {
+    width: 42px;
+    height: 42px;
+
+    i {
+      display: inline-block;
+      font-size: 24px;
+      line-height: 42px;
+    }
   }
 }
 
@@ -72,24 +113,102 @@
   font-size: 1.5rem;
   line-height: 36px;
 
-  i {
-    display: block;
-    font-size: 36px;
+  .icon-left,
+  .icon-right,
+  .icon-only {
+    width: 48px;
+    height: 48px;
+
+    i {
+      display: inline-block;
+      font-size: 28px;
+      line-height: 48px;
+    }
   }
 }
 
 .btn-secondary {
-  color: $white;
+  --bs-btn-color: #f7f8f9;
+  --bs-btn-bg: #fa8204;
+  --bs-btn-border-color: #fa8204;
+  --bs-btn-hover-color: #f7f8f9;
+  --bs-btn-hover-bg: #ff9306;
+  --bs-btn-hover-border-color: #ff9306;
+  --bs-btn-focus-shadow-rgb: 213, 111, 3;
+  --bs-btn-active-color: #f7f8f9;
+  --bs-btn-active-bg: #f47303;
+  --bs-btn-active-border-color: #f47303;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #f7f8f9;
+  --bs-btn-disabled-bg: #ffe2b4;
+  --bs-btn-disabled-border-color: #ffe2b4;
 
-  &:active,
-  &.active {
-    color: $white;
-    background-color: #eb5901;
-    border-color: #eb5901;
+  .bi,
+  &.only-text {
+    color: #fa8204;
+
+    &:hover {
+      color: #ff9306;
+    }
+
+    &:active {
+      color: #f47303;
+    }
+
+    &:disabled {
+      color: #ffe2b4;
+    }
   }
 
-  &:hover,
   &:disabled {
-    color: $white;
+    .icon-left,
+    .icon-right {
+      i {
+        color: #ffe2b4;
+      }
+    }
+  }
+}
+
+.btn-primary {
+  --bs-btn-color: #f7f8f9;
+  --bs-btn-bg: #305dab;
+  --bs-btn-border-color: #305dab;
+  --bs-btn-hover-color: #f7f8f9;
+  --bs-btn-hover-bg: #386fbc;
+  --bs-btn-hover-border-color: #386fbc;
+  --bs-btn-focus-shadow-rgb: 79, 117, 184;
+  --bs-btn-active-color: #f7f8f9;
+  --bs-btn-active-bg: #27418a;
+  --bs-btn-active-border-color: #27418a;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #bddbf5;
+  --bs-btn-disabled-bg: #e4f1fb;
+  --bs-btn-disabled-border-color: #e4f1fb;
+
+  &.only-text {
+    color: #305dab;
+
+    &:hover {
+      color: #386fbc;
+    }
+
+    &:active {
+      color: #27418a;
+    }
+
+    &:disabled {
+      color: #e4f1fb;
+    }
+  }
+
+  &:disabled {
+    .icon-left,
+    .icon-right {
+      background-color: #bddbf5;
+      i {
+        color: #e4f1fb;
+      }
+    }
   }
 }

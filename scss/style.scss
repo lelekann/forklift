@@ -8,4 +8,12 @@ body {
   font-size: $font-size-base;
   padding: 16px;
   margin: 0 auto;
+
+  button {
+    padding: 0;
+  }
+
+  .navbar {
+    margin-bottom: 2rem;
+  }
 }
