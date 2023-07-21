@@ -12135,44 +12135,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #e4f1fb;
   --bs-btn-disabled-border-color: #e4f1fb;
 }
-.btn-primary .bi {
-  color: var(--bs-btn-bg);
-}
-.btn-primary .icon-only {
-  color: var(--bs-btn-color);
-}
-.btn-primary.only-text {
-  color: var(--bs-btn-bg);
-}
-.btn-primary.only-text:hover {
-  color: var(--bs-btn-hover-bg);
-}
-.btn-primary.only-text:active {
-  color: var(--bs-btn-active-bg);
-}
-.btn-primary.only-text:disabled {
-  color: var(--bs-btn-disabled-bg);
-}
-.btn-primary:hover .bi {
-  color: var(--bs-btn-hover-bg);
-}
-.btn-primary:hover .icon-only {
-  color: #fff;
-}
-.btn-primary:active .bi {
-  color: var(--bs-btn-active-bg);
-}
-.btn-primary:active .icon-only {
-  color: var(--bs-btn-color);
-}
-.btn-primary:disabled .bi {
-  background-color: var(--bs-btn-disabled-color);
-  color: var(--bs-btn-disabled-bg);
-}
-.btn-primary:disabled .icon-only {
-  color: var(--bs-btn-disabled-color);
-  background-color: var(--bs-btn-disabled-bg);
-}
 
 .btn-info {
   --bs-btn-color: #f7f8f9;
@@ -12189,43 +12151,108 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #e4f3ff;
   --bs-btn-disabled-border-color: #e4f3ff;
 }
-.btn-info .bi {
+
+.btn-danger {
+  --bs-btn-color: #f7f8f9;
+  --bs-btn-bg: #e72d0d;
+  --bs-btn-hover-color: #f7f8f9;
+  --bs-btn-hover-bg: #f53512;
+  --bs-btn-hover-border-color: #f53512;
+  --bs-btn-active-color: #f7f8f9;
+  --bs-btn-active-bg: #cf1900;
+  --bs-btn-active-border-color: #cf1900;
+  --bs-btn-disabled-color: #ffcabb;
+  --bs-btn-disabled-bg: #fee8e7;
+  --bs-btn-disabled-border-color: #fee8e7;
+}
+
+.btn-success {
+  --bs-btn-color: #f7f8f9;
+  --bs-btn-bg: #04c122;
+  --bs-btn-hover-color: #f7f8f9;
+  --bs-btn-hover-bg: #49cb4d;
+  --bs-btn-hover-border-color: #49cb4d;
+  --bs-btn-active-color: #f7f8f9;
+  --bs-btn-active-bg: #00b118;
+  --bs-btn-active-border-color: #00b118;
+  --bs-btn-disabled-color: #c5ecc2;
+  --bs-btn-disabled-bg: #e7f8e6;
+  --bs-btn-disabled-border-color: #e7f8e6;
+}
+
+.btn-primary .bi,
+.btn-info .bi,
+.btn-danger .bi,
+.btn-success .bi {
   color: var(--bs-btn-bg);
 }
-.btn-info .icon-only {
+.btn-primary .icon-only,
+.btn-info .icon-only,
+.btn-danger .icon-only,
+.btn-success .icon-only {
   color: var(--bs-btn-color);
 }
-.btn-info.only-text {
+.btn-primary.only-text,
+.btn-info.only-text,
+.btn-danger.only-text,
+.btn-success.only-text {
   color: var(--bs-btn-bg);
 }
-.btn-info.only-text:hover {
+.btn-primary.only-text:hover,
+.btn-info.only-text:hover,
+.btn-danger.only-text:hover,
+.btn-success.only-text:hover {
   color: var(--bs-btn-hover-bg);
 }
-.btn-info.only-text:active {
+.btn-primary.only-text:active,
+.btn-info.only-text:active,
+.btn-danger.only-text:active,
+.btn-success.only-text:active {
   color: var(--bs-btn-active-bg);
 }
-.btn-info.only-text:disabled {
+.btn-primary.only-text:disabled,
+.btn-info.only-text:disabled,
+.btn-danger.only-text:disabled,
+.btn-success.only-text:disabled {
   color: var(--bs-btn-disabled-bg);
 }
-.btn-info:hover .bi {
+.btn-primary:hover .bi,
+.btn-info:hover .bi,
+.btn-danger:hover .bi,
+.btn-success:hover .bi {
   color: var(--bs-btn-hover-bg);
 }
-.btn-info:hover .icon-only {
+.btn-primary:hover .icon-only,
+.btn-info:hover .icon-only,
+.btn-danger:hover .icon-only,
+.btn-success:hover .icon-only {
   color: #fff;
 }
-.btn-info:active .bi {
+.btn-primary:active .bi,
+.btn-info:active .bi,
+.btn-danger:active .bi,
+.btn-success:active .bi {
   color: var(--bs-btn-active-bg);
 }
-.btn-info:active .icon-only {
+.btn-primary:active .icon-only,
+.btn-info:active .icon-only,
+.btn-danger:active .icon-only,
+.btn-success:active .icon-only {
   color: var(--bs-btn-color);
 }
-.btn-info:disabled .bi {
+.btn-primary:disabled .bi,
+.btn-info:disabled .bi,
+.btn-danger:disabled .bi,
+.btn-success:disabled .bi {
   background-color: var(--bs-btn-disabled-color);
   color: var(--bs-btn-disabled-bg);
 }
-.btn-info:disabled .icon-only {
+.btn-primary:disabled .icon-only,
+.btn-info:disabled .icon-only,
+.btn-danger:disabled .icon-only,
+.btn-success:disabled .icon-only {
   color: var(--bs-btn-disabled-color);
-  background-color: var(--bs-btn-disabled-bg);
+  background-color: transparent;
 }
 
 .btn-warning {
@@ -12281,110 +12308,6 @@ textarea.form-control-lg {
 .btn-warning:disabled .icon-only {
   color: var(--bs-btn-disabled-color);
   background-color: var(--bs-btn-disabled-bg);
-}
-
-.btn-danger {
-  --bs-btn-color: #f7f8f9;
-  --bs-btn-bg: #e72d0d;
-  --bs-btn-hover-color: #f7f8f9;
-  --bs-btn-hover-bg: #f53512;
-  --bs-btn-hover-border-color: #f53512;
-  --bs-btn-active-color: #f7f8f9;
-  --bs-btn-active-bg: #cf1900;
-  --bs-btn-active-border-color: #cf1900;
-  --bs-btn-disabled-color: #ffcabb;
-  --bs-btn-disabled-bg: #fee8e7;
-  --bs-btn-disabled-border-color: #fee8e7;
-}
-.btn-danger .bi {
-  color: var(--bs-btn-bg);
-}
-.btn-danger .icon-only {
-  color: var(--bs-btn-color);
-}
-.btn-danger.only-text {
-  color: var(--bs-btn-bg);
-}
-.btn-danger.only-text:hover {
-  color: var(--bs-btn-hover-bg);
-}
-.btn-danger.only-text:active {
-  color: var(--bs-btn-active-bg);
-}
-.btn-danger.only-text:disabled {
-  color: var(--bs-btn-disabled-bg);
-}
-.btn-danger:hover .bi {
-  color: var(--bs-btn-hover-bg);
-}
-.btn-danger:hover .icon-only {
-  color: #fff;
-}
-.btn-danger:active .bi {
-  color: var(--bs-btn-active-bg);
-}
-.btn-danger:active .icon-only {
-  color: var(--bs-btn-color);
-}
-.btn-danger:disabled .bi {
-  color: var(--bs-btn-disabled-bg);
-  background-color: var(--bs-btn-disabled-color);
-}
-.btn-danger:disabled .icon-only {
-  color: var(--bs-btn-disabled-color);
-  background-color: transparent;
-}
-
-.btn-success {
-  --bs-btn-color: #f7f8f9;
-  --bs-btn-bg: #04c122;
-  --bs-btn-hover-color: #f7f8f9;
-  --bs-btn-hover-bg: #49cb4d;
-  --bs-btn-hover-border-color: #49cb4d;
-  --bs-btn-active-color: #f7f8f9;
-  --bs-btn-active-bg: #00b118;
-  --bs-btn-active-border-color: #00b118;
-  --bs-btn-disabled-color: #c5ecc2;
-  --bs-btn-disabled-bg: #e7f8e6;
-  --bs-btn-disabled-border-color: #e7f8e6;
-}
-.btn-success .bi {
-  color: var(--bs-btn-bg);
-}
-.btn-success .icon-only {
-  color: var(--bs-btn-color);
-}
-.btn-success.only-text {
-  color: var(--bs-btn-bg);
-}
-.btn-success.only-text:hover {
-  color: var(--bs-btn-hover-bg);
-}
-.btn-success.only-text:active {
-  color: var(--bs-btn-active-bg);
-}
-.btn-success.only-text:disabled {
-  color: var(--bs-btn-disabled-bg);
-}
-.btn-success:hover .bi {
-  color: var(--bs-btn-hover-bg);
-}
-.btn-success:hover .icon-only {
-  color: #fff;
-}
-.btn-success:active .bi {
-  color: var(--bs-btn-active-bg);
-}
-.btn-success:active .icon-only {
-  color: var(--bs-btn-color);
-}
-.btn-success:disabled .bi {
-  color: var(--bs-btn-disabled-bg);
-  background-color: var(--bs-btn-disabled-color);
-}
-.btn-success:disabled .icon-only {
-  color: var(--bs-btn-disabled-color);
-  background-color: transparent;
 }
 
 .btn-light {
