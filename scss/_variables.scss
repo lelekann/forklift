@@ -7,32 +7,9 @@ $regular-font-weight: 400;
 $primary: #305dab;
 $secondary: #fa8204;
 $success: #04c122;
-$info: #0091cf;
+$info: #3c77e9;
 $warning: #f0e81a;
 $danger: #e72d0d;
 $dark: #424951;
 $light: #f7f8f9;
 $white: #fff;
-
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-
-$custom-theme-colors: (
-  "lightblue": #3d8bfd,
-  "secondary-50": #fff4e1,
-  "secondary-100": #ffe2b4,
-  "secondary-200": #ffd083,
-  "secondary-300": #ffbd50,
-  "secondary-400": #ffae2a,
-  "secondary-500": #ff9f08,
-  "secondary-600": #ff9306,
-  "secondary-800": #f47303,
-  "secondary-900": #eb5901,
-  "primary-50": #e4f1fb,
-  "primary-100": #bddbf5,
-);
-
-$theme-colors: map-merge(
-  $map1: $custom-theme-colors,
-  $map2: $theme-colors,
-);
