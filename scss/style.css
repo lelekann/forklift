@@ -11970,6 +11970,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.buttons {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 575.98px) {
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -11978,10 +11992,22 @@ textarea.form-control-lg {
   letter-spacing: 0.46px;
   text-transform: lowercase;
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  width: fit-content;
+  white-space: nowrap;
+}
+.btn.btn-sm, .btn-group-sm > .btn {
+  height: 48px;
+}
+.btn.btn-md {
+  height: 50px;
+}
+.btn.btn-lg, .btn-group-lg > .btn {
+  height: 54px;
 }
 .btn.btn-xl {
   border-radius: 5px;
+  height: 64px;
 }
 .btn .icon-left,
 .btn .icon-right,
@@ -12426,8 +12452,22 @@ body {
   padding: 16px;
   margin: 0 auto;
 }
+@media (max-width: 575.98px) {
+  body {
+    padding: 0;
+  }
+}
 body section {
   background-color: #cdcdcd;
+  padding: 20px;
+}
+@media (max-width: 575.98px) {
+  body section {
+    padding: 5px;
+  }
+  body section h2, body section .h2, body section h3, body section .h3 {
+    text-align: center;
+  }
 }
 body button {
   padding: 0;

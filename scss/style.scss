@@ -9,8 +9,21 @@ body {
   padding: 16px;
   margin: 0 auto;
 
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+  }
+
   section {
     background-color: #cdcdcd;
+    padding: 20px;
+
+    @include media-breakpoint-down(sm) {
+      padding: 5px;
+
+      h2, h3 {
+        text-align: center;
+      }
+    }
   }
 
   button {

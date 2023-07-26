@@ -1,5 +1,18 @@
 @import "variables";
 
+.buttons {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -8,10 +21,25 @@
   letter-spacing: 0.46px;
   text-transform: lowercase;
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  width: fit-content;
+  white-space: nowrap;
+
+  &.btn-sm{
+    height: 48px;
+  }
+
+  &.btn-md {
+    height: 50px;
+  }
+
+  &.btn-lg {
+    height: 54px;
+  }
 
   &.btn-xl {
     border-radius: 5px;
+    height: 64px;
   }
 
   .icon-left,
