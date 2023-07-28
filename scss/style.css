@@ -11984,6 +11984,10 @@ textarea.form-control-lg {
   }
 }
 
+a.btn {
+  padding: 9px 20px;
+}
+
 .btn {
   display: flex;
   align-items: center;
