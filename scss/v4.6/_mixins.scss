@@ -1,0 +1,44 @@
+@mixin bg-gradient-variant($parent, $color, $ignore-warning: false) {
+  #{$parent} {
+    background: $color linear-gradient(180deg, mix($body-bg, $color, 15%), $color) repeat-x !important;
+  }
+  @include deprecate("The `bg-gradient-variant` mixin", "v4.5.0", "v5", $ignore-warning);
+}
+
+@mixin table-row-variant($state, $background, $border: null) {
+  // Exact selectors below required to override `.table-striped` and prevent
+  // inheritance to nested tables.
+  .table-#{$state} {
+    &,
+    > th,
+    > td {
+      background-color: $background;
+    }
+
+    @if $border != null {
+      th,
+      td,
+      thead th,
+      tbody + tbody {
+        border-color: $border;
+      }
+    }
+  }
+
+  // Hover states for `.table-hover`
+  // Note: this is not available for cells or rows within `thead` or `tfoot`.
+  .table-hover {
+    $hover-background: darken($background, 5%);
+
+    .table-#{$state} {
+      @include hover() {
+        background-color: $hover-background;
+
+        > td,
+        > th {
+          background-color: $hover-background;
+        }
+      }
+    }
+  }
+}
