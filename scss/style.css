@@ -37677,31 +37677,52 @@ a.btn {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-  padding: 16px;
+  padding: 0;
   margin: 0 auto;
 }
-@media (max-width: 575.98px) {
-  body {
-    padding: 0;
-  }
+body .container {
+  max-width: 1920px;
 }
-body section {
-  background-color: #cdcdcd;
-  padding: 20px;
+body .nav-main {
+  transform: translate(15px, -65px);
+  margin-bottom: -65px;
 }
-@media (max-width: 575.98px) {
-  body section {
-    padding: 5px;
-  }
-  body section h2, body section .h2, body section h3, body section .h3 {
-    text-align: center;
-  }
+body a,
+body .quicksearch a:hover {
+  text-decoration: none;
+}
+body .btn.btnbluewhite {
+  background: #fff;
+  border: 2px solid #305dab;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+body .btn.btnbluewhite:hover {
+  background: #305dab;
+}
+body h3, body .h3 {
+  text-transform: uppercase;
+  color: #305dab;
+  font-weight: 700;
+}
+body h4, body .h4 {
+  color: #757575;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+body h5, body .h5 {
+  color: #ff7d00;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+body h6, body .h6 {
+  color: #404042;
+  font-size: 14px;
+  font-weight: bold;
 }
 body button {
   padding: 0;
-}
-body .navbar {
-  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
